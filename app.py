@@ -60,7 +60,17 @@ def synthesis(data):
     return data
 
 
+intro = """
+<h1 style="text-align: center;">
+   Example-based Motion Synthesis via Generative Motion Matching
+</h1>
+<h3 style="text-align: center; margin-bottom: 7px;">
+    <a href="http://weiyuli.xyz/GenMM" target="_blank">Project Page</a> | <a href="https://huggingface.co/papers/2306.00378" target="_blank">Paper</a> | <a href="https://github.com/wyysf-98/GenMM" target="_blank">Code</a> 
+</h3>
+"""
+
 with gr.Blocks() as demo:
+    gr.HTML(intro)
     gr.HTML(
         """<iframe src="/GenMM_demo/" width="100%" height="700px" style="border:none;">"""
     )
